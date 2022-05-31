@@ -16,4 +16,9 @@ public class HelloController {
 	public String sayHelloToXX(@PathVariable("name") String name) {
 		return "Hello Mr. " +name;
 	}
+	
+	@GetMapping("/hello/{name}/{address}")
+	public String sayHelloToXXx(@PathVariable("name") String name) {
+		return "Hello Mr. " +name;
+	}
 }
