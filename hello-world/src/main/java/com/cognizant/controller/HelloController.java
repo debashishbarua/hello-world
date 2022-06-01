@@ -17,5 +17,8 @@ public class HelloController {
 		return "Hello Mr. " +name;
 	}
 	
-	
+	@GetMapping("/v2/hello/{name}")
+	public String sayHelloToX(@PathVariable("name") String name) {
+		return "Hello Mr. " +name;
+	}
 }
