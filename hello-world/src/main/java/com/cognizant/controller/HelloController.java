@@ -12,7 +12,7 @@ public class HelloController {
 		return "Hello World!!!!";
 	}
 	
-	@GetMapping("/hello/{name}")
+	@GetMapping("/v1/hello/{name}")
 	public String sayHelloToXX(@PathVariable("name") String name) {
 		return "Hello Mr. " +name;
 	}
